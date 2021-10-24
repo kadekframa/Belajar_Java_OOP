@@ -6,7 +6,8 @@ public class Object {
 
         // Contoh penggunaan object.
         var person1 = new Person();
-        var person2 = new Person();
+
+        Person person2 = new Person();
 
         Person person3;
         person3 = new Person();
