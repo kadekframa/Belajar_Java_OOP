@@ -9,6 +9,18 @@ class Person {
     final String country = "Indonesia";         // final sama seperti constant di javascript.
 
 
+    // Constructor
+    // Saat kita membuat object, maka kita seperti memanggil sebuah method, karena kita menggunakan kurung ().
+    // Di dalam class Java, kita bisa membuat constructor , constructor adalah method yang akan dipanggil saat pertama kali object dibuat.
+    // Mirip seperti di Method, kita bisa memberi parameter pada constructor.
+    // Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau return value.
+    // Contoh Constructor.
+    Person(String paramName, String paramAddress){
+        name = paramName;
+        address = paramAddress;
+    }
+
+
     // Method.
     // Selain menambahkan field, kita juga bisa menambahkan method ke object.
     // cara dengan mendeklarasikan method tersebut di dalam block class.
