@@ -1,2 +1,3 @@
-class Person {      // Contoh class di Java
+class Person {
+
 }
