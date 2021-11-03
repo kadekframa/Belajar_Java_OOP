@@ -8,10 +8,11 @@ public class PersonApp {
         var person1 = new Person("Kadekframa", "Badung");     // memanggil constructor. Constructor adalah method yang pertama kali dipanggil ketika sebuah object dibuat.
 
 
-        Person person2 = new Person("budi", "jakarta");  // Object person2
+        Person person2 = new Person("budi");  // Object person2
 
         Person person3;                 // Object person3
-        person3 = new Person("doremi", "bandung");
+        person3 = new Person();
+        person3.name = "Joko";
 
 
         System.out.println(person1.name);
