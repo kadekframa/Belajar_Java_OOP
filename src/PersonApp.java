@@ -10,6 +10,7 @@ public class PersonApp {
         person1.address = "Badung, Bali";
 //        person1.country = "Tidak Bisa Diubah";            // field country tidak bisa diubah, karena sudah bersifat final.
 
+
         Person person2 = new Person();  // Object person2
 
         Person person3;                 // Object person3
@@ -19,5 +20,8 @@ public class PersonApp {
         System.out.println(person1.name);
         System.out.println(person1.address);
         System.out.println(person1.country);
+
+        person1.sayHello("Kadek");
+        person3.sayHello("Kadek");      // karena person3 belum dideklarasikan maka nilai nya adalah null.
     }
 }
