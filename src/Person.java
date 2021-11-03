@@ -16,8 +16,8 @@ class Person {
     // Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau return value.
     // Contoh Constructor.
     Person(String name, String address){
-        name = name;            // variable shadowing
-        address = address;
+        this.name = name;               // kaca kunci this berarti menunjukan object yang saat ini. Kata kunci this juga dapa digunakan sebagai solusi untuk mengatasi variable shadowing.
+        this.address = address;
     }
 
     // Constructor Overloading
@@ -46,7 +46,7 @@ class Person {
     // Untuk mengakses method tersebut, kita bisa menggunakan tanda titik (.) dan diikuti dengan nama method nya. Sama seperti mengakses field.
 
     void sayHello(String name){
-        System.out.println("Hello " + name + ", My name is " + name);
+        System.out.println("Hello " + name + ", My name is " + this.name);
     }
 
 
