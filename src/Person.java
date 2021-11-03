@@ -15,9 +15,9 @@ class Person {
     // Mirip seperti di Method, kita bisa memberi parameter pada constructor.
     // Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau return value.
     // Contoh Constructor.
-    Person(String paramName, String paramAddress){
-        name = paramName;
-        address = paramAddress;
+    Person(String name, String address){
+        name = name;            // variable shadowing
+        address = address;
     }
 
     // Constructor Overloading
@@ -45,8 +45,8 @@ class Person {
     // Sama seperti method biasanya, kita juga bisa menambahkan return value, parameter dan method overloading di method yang ada di dalam block class.
     // Untuk mengakses method tersebut, kita bisa menggunakan tanda titik (.) dan diikuti dengan nama method nya. Sama seperti mengakses field.
 
-    void sayHello(String paramName){
-        System.out.println("Hello " + paramName + ", My name is " + name);
+    void sayHello(String name){
+        System.out.println("Hello " + name + ", My name is " + name);
     }
 
 
