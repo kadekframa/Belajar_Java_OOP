@@ -7,9 +7,21 @@ class Manajer {
     // Untuk melakukan pewarisan, di class child, kita harus menggunakan kata kunci extends lalu diikuti dengan nama class parent nya.
 
     String name;
+    String company;
+
+    Manajer(String name){                       // constructor Manajer degan satu parameter.
+        this.name = name;
+    }
+
+    Manajer(String name, String company){       // membuat constructor Manajer.
+        this.name = name;
+        this.company = company;
+    }
 
     void sayHello(String name){
         System.out.println("Hello " + name + ", My name is Manajer " + this.name);
     }
+
+
 
 }
