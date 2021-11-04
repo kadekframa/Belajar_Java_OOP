@@ -1,4 +1,4 @@
-class Manajer {
+class Manajer extends Employee {
     // Inheritance.
     // Inheritance atau pewarisan adalah kemampuan untuk menurunkan sebuah class ke class lain.
     // Dalam artian, kita bisa membuat class Parent dan class Child.
@@ -6,15 +6,14 @@ class Manajer {
     // Saat sebuah class diturunkan, maka semua field dan method yang ada di class  Parent, secara otomatis akan dimiliki oleh class child.
     // Untuk melakukan pewarisan, di class child, kita harus menggunakan kata kunci extends lalu diikuti dengan nama class parent nya.
 
-    String name;
     String company;
 
     Manajer(String name){                       // constructor Manajer degan satu parameter.
-        this.name = name;
+        super(name);
     }
 
     Manajer(String name, String company){       // membuat constructor Manajer.
-        this.name = name;
+        super(name);
         this.company = company;
     }
 
