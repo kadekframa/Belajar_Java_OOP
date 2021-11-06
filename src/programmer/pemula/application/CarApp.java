@@ -10,6 +10,9 @@ public class CarApp {
         car.drive();                        // memanggil method drive() yang ada di class Avanza.
         System.out.println(car.getTire());  // memanggil method getTire() yang ada di class Avanza.
 
+        System.out.println(car.getBrand());
+        System.out.println(car.isMaintenanca());
+
     }
 }
 
