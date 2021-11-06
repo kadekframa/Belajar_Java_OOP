@@ -1,6 +1,7 @@
 package programmer.pemula.application;
 
 import programmer.pemula.data.Avanza;
+import programmer.pemula.data.Bus;
 import programmer.pemula.data.Car;
 
 public class CarApp {
@@ -13,6 +14,8 @@ public class CarApp {
         System.out.println(car.getBrand());
         System.out.println(car.isMaintenanca());
 
+        Car bus = new Bus();                // membuat object bus.
+        System.out.println("Ini Bus punya: " + bus.isBig());
     }
 }
 
