@@ -1,5 +1,7 @@
 package programmer.pemula.data;
 
+import java.security.PublicKey;
+
 public class Constant {
     // Static Keyword.
     // Sebelumnya kita sudah sering melihat kata kunci static, namn belum pernah kita bahas.
@@ -14,5 +16,7 @@ public class Constant {
      * Inner Class, artinya inner class tersebut bisa diakses secara langsung tanpa harus membuat object outer class terlebih dahulu. Static pada inner class menyebabkan kita tidak bisa mengakses lagi object outer class nya.
      */
 
+    public static final String APPLICATION = "Belajar Java";        // static di field.
+    public static int VERSION = 4;
 
 }
