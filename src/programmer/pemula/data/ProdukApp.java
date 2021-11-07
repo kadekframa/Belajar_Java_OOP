@@ -12,6 +12,7 @@ public class ProdukApp {
 
         Produk produk2 = new Produk("Hp pavilion gaming keren", 34000000);
         System.out.println("Ini true seharusnya ya: " + produk.equals(produk2));
+        System.out.println(produk.hashCode() == produk2.hashCode());
 
     }
 }
