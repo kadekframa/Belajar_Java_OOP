@@ -15,11 +15,9 @@ public class ValidationApp {
 
         try {                                           // membuat try-catch untuk mengatasi exception di Java. Try-catch ini berfungsi untuk menangkap exception yang kemungkinan bisa terjadi pada sebuah method.
             ValidationUtil.validate(loginRequest);
-            System.out.println("Data valid");
-        }catch (ValidationException exception){
-            System.out.println("Data tidak valid : " + exception.getMessage());
-        }catch (NullPointerException exception){
-            System.out.println("Data tidak boleh null: " + exception.getMessage());
+            System.out.println("Data valid, Tetap Semangat");
+        }catch (ValidationException | NullPointerException exception){              // Cara mudah dan simple untuk membuat multiple catch untuk menangkap exception.
+            System.out.println("Telah terjadi error:" + exception.getMessage());
         }
 
 
