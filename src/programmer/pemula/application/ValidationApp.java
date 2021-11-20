@@ -30,5 +30,17 @@ public class ValidationApp {
         }
 
 
+
+        // RuntimeException.
+
+        LoginRequest loginRequest2 = new LoginRequest(null,null);
+        ValidationUtil.validateRuntime(loginRequest2);
+        System.out.println("Semangat");
+
+        // NB: Walaupun runtime exception tidak wajib di try-catch, tapi ada baiknya kita tetap melakukan try-catch.
+        // Karena jika terjadi runtime exception, yang ditakutkan adalah program kita berhenti.
+        // Untuk mengetahui penggunaan lebih lanjut dari runtime exception, selanjutnya dapat mempelajari error handling dari framework atau library yang akan digunakan.
+
+
     }
 }
