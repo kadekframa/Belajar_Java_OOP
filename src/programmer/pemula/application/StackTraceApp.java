@@ -12,7 +12,7 @@ public class StackTraceApp {
             String[] names ={
                     "Kadek", "Frama", "Danamastyana"
             };
-            System.out.println(names[100]);         // Ini akan menghasilkan error karena index yang dipanggil adalah index ke 100. Tetapi jumlah index yang pada object names hanya berjumlah 3 index.
+            System.out.println(names[2]);         // Ini akan menghasilkan error karena index yang dipanggil adalah index ke 100. Tetapi jumlah index yang pada object names hanya berjumlah 3 index.
         }catch (Throwable throwable){
             StackTraceElement[] stackTraceElement = throwable.getStackTrace();
 
